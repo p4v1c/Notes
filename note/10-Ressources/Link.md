@@ -61,3 +61,5 @@ john -wordlist:users.txt -rule:KoreLogic -stdout
 ```
 
 http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html
+
+https://msrc.microsoft.com/update-guide/vulnerability

